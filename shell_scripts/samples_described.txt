@@ -1,0 +1,17 @@
+Gp_EGG	Gp_EGG_rep1
+Gp_EGG	Gp_EGG_rep2
+Gp_J2	Gp_J2_rep1
+Gp_J2	Gp_J2_rep2
+Gp_J2	Gp_J2_rep3
+Gp_7DPI	Gp_7DPI_rep1
+Gp_7DPI	Gp_7DPI_rep2
+Gp_14DPI	Gp_14DPI_rep1
+Gp_14DPI	Gp_14DPI_rep2
+Gp_21DPI	Gp_21DPI_rep1
+Gp_21DPI	Gp_21DPI_rep2
+Gp_28DPI	Gp_28DPI_rep1
+Gp_28DPI	Gp_28DPI_rep2
+Gp_35DPI	Gp_35DPI_rep1
+Gp_35DPI	Gp_35DPI_rep2
+Gp_MALE	Gp_MALE_rep1
+Gp_MALE	Gp_MALE_rep2
