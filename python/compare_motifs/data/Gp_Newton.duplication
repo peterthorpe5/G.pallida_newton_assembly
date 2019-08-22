@@ -1,0 +1,11 @@
+Reading BLAST file and pre-processing
+Generating BLAST list
+73504 matches imported (50820 discarded)
+3320 pairwise comparisons
+305 alignments generated
+Type of dup	Code	Number
+Singleton	0	5528
+Dispersed	1	6790
+Proximal	2	1280
+Tandem	3	1193
+WGD or segmental	4	1530

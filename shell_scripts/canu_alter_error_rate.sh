@@ -14,4 +14,4 @@ cd $HOME/newton
 module load oraclejava/jdk1.8.0_74
 #default
 
-/storage/home/users/pjt6/canu/Linux-amd64/bin/canu -p newton_using_EC_reads cnsErrorRate=0.25 -d newton_using_EC_reads genomeSize=120m -pacbio-raw 'Gp_newton_reduce_haplotypes_400X.correctedReads.fasta.gz' -useGrid=False -maxMemory=450 -maxThreads=16
+/storage/home/users/pjt6/canu/Linux-amd64/bin/canu -p newton_using_EC_reads correctedErrorRate=0.15 cnsErrorRate=0.25 -d newton_using_EC_reads genomeSize=120m -pacbio-raw 'Gp_newton_reduce_haplotypes_400X.correctedReads.fasta.gz' -useGrid=False -maxMemory=450 -maxThreads=16

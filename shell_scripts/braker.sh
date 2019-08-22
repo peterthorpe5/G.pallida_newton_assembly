@@ -15,14 +15,14 @@ echo "1) running test on comp braker and utr nothing extra"
 cmd='perl /home/User_name/programs/BRAKER/scripts/braker.pl 
 --genome=Gp_Newton_haplotype1_sotmasked.fasta
 --overwrite 
---workingdir=/home/User_name/Desktop/newton_final/braker_20_rounds 
+--workingdir=/home/User_name/Desktop/newton_final/braker_7_rounds 
 --bam=Gp_soft_maskedAligned.sortedByCoord.out.bam 
 --AUGUSTUS_BIN_PATH=/home/User_name/programs/Augustus/bin 
 --AUGUSTUS_CONFIG_PATH=/home/User_name/programs/Augustus/config 
 --AUGUSTUS_SCRIPTS_PATH=/home/User_name/programs/Augustus/scripts 
 --species=GPAL_newton_softmasked20rounds0
 --augustus_args="--protein=on --start=on --stop=on --cds=on --introns=on  --stopCodonExcludedFromCDS=False --genemodel=complete " 
---crf --cores 4 --gff3 --rounds 20 
+--crf --cores 4 --gff3 --rounds 7 
 --filterOutShort 
 --GENEMARK_PATH=/home/User_name/programs/gm_et_linux_64/gmes_petap/ 
 --softmasking '
@@ -52,7 +52,7 @@ cmd='perl /home/User_name/programs/BRAKER/scripts/braker.pl
 --AUGUSTUS_SCRIPTS_PATH=/home/User_name/programs/Augustus/scripts 
 --species=GPAL_newton_softmasked20stop
 --augustus_args=" --stopCodonExcludedFromCDS=False --genemodel=complete  " 
---crf --cores 4 --gff3 --rounds 20 
+--crf --cores 4 --gff3 --rounds 7 
 --utr on
 --filterOutShort 
 --GENEMARK_PATH=/home/User_name/programs/gm_et_linux_64/gmes_petap/ 
