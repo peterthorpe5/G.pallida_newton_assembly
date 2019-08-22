@@ -6622,10 +6622,10 @@ print("number of spry proteins with sig peptide (signalp4.1): ",
 sig_and_phobius = secreted_name.union(secreted_name_sigP)
 print("number of spry proteins with sig peptide (signalp4.1 and probius): ",
       len(spry_name.intersection(sig_and_phobius)))
-
+sprysec = spry_name.intersection(sig_and_phobius)
 print("secreted proteins phobius: ", len(secreted_name))
 print("secreted proteins signalp4.1: ", len(secreted_name_sigP))
 
 
 
-    
+
