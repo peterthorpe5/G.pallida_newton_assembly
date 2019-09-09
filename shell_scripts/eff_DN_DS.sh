@@ -10,6 +10,8 @@
 # Define input files and input/output directories
 
 cd /storage/home/users/pjt6/newton/comparative_genomics/all_nems/effectors
+rm *fasta_*
+rm -rf back_translated
 
 filenames=*.fasta
 
@@ -19,28 +21,62 @@ for f in ${filenames}
 do
 	#echo "Running muscle ${f}"
 	cmd="muscle -in ${f} -out ${f}_aligned.fasta" 
-	#echo ${cmd}
-	#eval ${cmd}
+	echo ${cmd}
+	eval ${cmd}
 	wait
 	
 done
 ###############################
-python ../Align_back_translate_Aug2014_cow_boy_method002.py
+###############################
+# purge bad aligning sequences: https://github.com/dukecomeback/bad-sequence-remover
 
-filenames2 = *_aligned.fasta
+
+filenames2=*aligned.fasta
 for file in ${filenames2}
 do
-	#echo "Running muscle ${f}"
-	cmd="muscle -in ${file} -out ${file}_refine.fasta -refine" 
-	#echo ${cmd}
-	#eval ${cmd}
+	echo "Running seq purging ${f}"
+	cmd="perl /storage/home/users/pjt6/bad-sequence-remover/badseq_remover.pl
+    -in ${file} 
+    -out ${file}_purges.fasta
+    -exp GPALN" 
+	echo ${cmd}
+	eval ${cmd}
 	wait
-	
 done
+
+###############
+
+filenames2=*_purges.fasta
+for file in ${filenames2}
+do
+	echo "Running muscle ${f}"
+	cmd="muscle -in ${file} -out ${file}_refine.fasta -refine" 
+	echo ${cmd}
+	eval ${cmd}
+	wait
+done
+mkdir back_translated
+
+python /storage/home/users/pjt6/newton/comparative_genomics/all_nems/Align_back_translate.py
 
 #####################
 cd back_translated/
-filenames3=*.fasta
+#filenames3=*.fasta
+#for file in ${filenames3}
+#do
+#	echo "Running trimal ${file}"
+#	cmd="/storage/home/users/pjt6/trimAl/source/trimal  
+#    -in ${file}  
+#    -out ${file}.phy
+#    -phylip 
+#    -gappyout" 
+#	echo ${cmd}
+#	eval ${cmd}
+#	wait
+#done
+
+cd back_translated/
+filenames3=*translated.fasta
 for file in ${filenames3}
 do
 	echo "Running trimal ${file}"
@@ -48,7 +84,7 @@ do
     -in ${file}  
     -out ${file}.phy
     -phylip 
-    -gappyout" 
+    -nogaps" 
 	echo ${cmd}
 	eval ${cmd}
 	wait
@@ -83,5 +119,7 @@ do
 	cmd2="mv ${f} ./files_done"
 	echo ${cmd2}
 	eval ${cmd2}
-	
 done
+
+grep "Probability: o3=" -H *_stats.txt > ~/newton/comparative_genomics/all_nems/effector_no_gaps_NO_MINC_orthofinder_DN_DS.txt
+
