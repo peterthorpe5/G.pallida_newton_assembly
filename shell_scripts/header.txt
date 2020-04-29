@@ -1,0 +1,17 @@
+@RG ID:Gp_14DPI_rep1Aligned.sortedByCoord.out	SM:Gp_14DPI_rep1Aligned.sortedByCoord.out
+@RG ID:Gp_14DPI_rep2Aligned.sortedByCoord.out	SM:Gp_14DPI_rep2Aligned.sortedByCoord.out
+@RG ID:Gp_21DPI_rep1Aligned.sortedByCoord.out	SM:Gp_21DPI_rep1Aligned.sortedByCoord.out
+@RG ID:Gp_21DPI_rep2Aligned.sortedByCoord.out	SM:Gp_21DPI_rep2Aligned.sortedByCoord.out
+@RG ID:Gp_28DPI_rep1Aligned.sortedByCoord.out	SM:Gp_28DPI_rep1Aligned.sortedByCoord.out
+@RG ID:Gp_28DPI_rep2Aligned.sortedByCoord.out	SM:Gp_28DPI_rep2Aligned.sortedByCoord.out
+@RG ID:Gp_35DPI_rep1Aligned.sortedByCoord.out	SM:Gp_35DPI_rep1Aligned.sortedByCoord.out
+@RG ID:Gp_35DPI_rep2Aligned.sortedByCoord.out	SM:Gp_35DPI_rep2Aligned.sortedByCoord.out
+@RG ID:Gp_7DPI_rep1Aligned.sortedByCoord.out	SM:Gp_7DPI_rep1Aligned.sortedByCoord.out
+@RG ID:Gp_7DPI_rep2Aligned.sortedByCoord.out	SM:Gp_7DPI_rep2Aligned.sortedByCoord.out
+@RG ID:Gp_EGG_rep1Aligned.sortedByCoord.out	SM:Gp_EGG_rep1Aligned.sortedByCoord.out
+@RG ID:Gp_EGG_rep2Aligned.sortedByCoord.out	SM:Gp_EGG_rep2Aligned.sortedByCoord.out
+@RG ID:Gp_J2_rep1Aligned.sortedByCoord.out	SM:Gp_J2_rep1Aligned.sortedByCoord.out
+@RG ID:Gp_J2_rep2Aligned.sortedByCoord.out	SM:Gp_J2_rep2Aligned.sortedByCoord.out
+@RG ID:Gp_J2_rep3Aligned.sortedByCoord.out	SM:Gp_J2_rep3Aligned.sortedByCoord.out
+@RG ID:Gp_MALE_rep1_cAligned.sortedByCoord.out	SM:Gp_MALE_rep1_cAligned.sortedByCoord.out
+@RG ID:Gp_MALE_rep2_bAligned.sortedByCoord.out	SM:Gp_MALE_rep2_bAligned.sortedByCoord.out
