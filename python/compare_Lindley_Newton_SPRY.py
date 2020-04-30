@@ -13,7 +13,7 @@ for line in f:
         lind_to_newton[lind] = newton
         newton_to_lind[newton] = lind
 f.close()      
-
+all_newton =set([])
 phobius = """GPALN_016360-T2	0	Y	n10-20c24/25o
 GPALN_013463-T1	0	Y	n6-17c22/23o
 GPALN_007409-T1	0	Y	n2-12c20/21o
@@ -6608,6 +6608,7 @@ for i in phobius:
     name = name.rstrip()
     tm = i.split()[1]
     if name.endswith("-T1"):
+        all_newton.add(i)
         if tm == "0":
             secreted_name.add(name)
 
@@ -6636,11 +6637,13 @@ print("number of spry proteins with sig peptide (signalp4.1): ",
       len(spry_name.intersection(secreted_name_sigP)))
 
 sig_and_phobius = secreted_name.union(secreted_name_sigP)
+newton_spry = spry_name.difference(sig_and_phobius)
 print("number of spry proteins with sig peptide (signalp4.1 and probius): ",
       len(spry_name.intersection(sig_and_phobius)))
 sprysec = spry_name.intersection(sig_and_phobius)
 print("secreted proteins phobius: ", len(secreted_name))
 print("secreted proteins signalp4.1: ", len(secreted_name_sigP))
+#print("number of newton spry genes %d \n" % (len(newton_spry)))
 
 lind_spry = set("""GPLIN_000008300
 GPLIN_000008400
@@ -20773,13 +20776,20 @@ print("spry domain containing proteins expressed in Newton J2 : ",
 print("\n.... now looking at Lidnly sprys vs Newton sprys\n")
 
 sprysec_coutn = 0 
+no_sigP_domain_in_newton = 0
 for i in lind_spryces:
     RBBH_newt = lind_to_newton[i]
     if RBBH_newt in sig_and_phobius:
         print("Lindly SPRYSEC:\t%s\tRBBH SPRYCES in Newton \t%s" % (i, RBBH_newt))
         sprysec_coutn = sprysec_coutn + 1
+    if RBBH_newt in newton_spry:
+        print("Weirdo;: Lindly SPRYSEC:\t%s\tRBBH SPRYCES in Newton spry NOT secreted\t%s" % (i, RBBH_newt))
+        no_sigP_domain_in_newton = no_sigP_domain_in_newton + 1
+ 
 
 print("\nwe have %d SPRYCESs with signal peptides in both Lindley and newton\n" % (sprysec_coutn))
+print("\nwe have %d SPRYCESs with signal peptides in Lindley BUT ONLY SPRY doamin in newton\n" % (no_sigP_domain_in_newton))
+
 
 spry_coutn = 0 
 for i in lind_spry:
