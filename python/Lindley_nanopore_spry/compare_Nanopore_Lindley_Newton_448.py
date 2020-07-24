@@ -9032,4 +9032,5 @@ for i in lind_four_48:
 
 print("\nwe have %d Lind four_48 withOUT signal peptide but four_48SEC in newton\n" % (four_48_coutn))
 
-    
+
+print("lindley has %d secreted proteins \n " % len(lind_sec))
