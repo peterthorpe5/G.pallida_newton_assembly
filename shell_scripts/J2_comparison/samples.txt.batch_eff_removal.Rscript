@@ -1,0 +1,13 @@
+library(edgeR)
+
+rnaseqMatrix = read.table("J2.counts.matrix", header=T, row.names=1, com='', check.names=F)
+batches = read.table("samples.txt", header=F, row.names=2, check.names=F)
+batch_factors = as.factor(batches[colnames(rnaseqMatrix),])
+exp_study = DGEList(counts=rnaseqMatrix)
+exp_study = calcNormFactors(exp_study)
+logCPM <- cpm(exp_study,log=TRUE)
+logCPM <- removeBatchEffect(logCPM,batch=batch_factors)
+millions = colSums(rnaseqMatrix)/1e6
+myCPM = 2^logCPM
+myRecounts = apply(myCPM, 1, function (x) x*millions)
+write.table(t(myRecounts), file='J2.counts.matrix.batch_eff_removal.matrix', quote=F, sep='	')

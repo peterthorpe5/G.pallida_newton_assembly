@@ -25,7 +25,7 @@ wait
 #cp curated.haplotigs.fasta reassigned.haplotigs.fasta
 
 
-#python ~/Downloads/blobtools-light-master/mapping2cov.py -a /home/pt40963/scratch/nematode/newton/purge_haplo_ALL_haplotypes_all_data/purge_the_purged/newt_correc_corre.ctg.L4000_p19_lay.fa -bam /home/pt40963/scratch/nematode/newton/purge_haplo_ALL_haplotypes_all_data/purge_the_purged/sorted.bam -o contig.mappingall_final.cas.cov
+#python ~/shelf_apps/apps/blobtools-light-master/mapping2cov.py -a /storage/home/users/pjt6/pb_fish/contigs/curated.fasta -sam /storage/home/users/pjt6/pb_fish/contigs/temp.sam -o contig.mappingall_final.cas.cov
 
 
 ######################################

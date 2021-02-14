@@ -1,0 +1,3 @@
+INFO:parse_scan_motifs.py: Wed Aug 19 14:12:31 2020:sys.version_info(major=3, minor=7, micro=2, releaselevel='final', serial=0)
+INFO:parse_scan_motifs.py: Wed Aug 19 14:12:31 2020:Command-line: C:\Users\pjt6\Documents\G.pallida_newton_assembly\python\compare_motifs\return_full_annot_from_list_of_genes.py
+INFO:parse_scan_motifs.py: Wed Aug 19 14:12:31 2020:Starting testing: Wed Aug 19 14:12:32 2020
