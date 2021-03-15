@@ -1,5 +1,5 @@
 from collections import defaultdict
-
+# PF03199
 GROS_Nanopore_to_newton = defaultdict(str)
 newton_to_GROS_Nanopore  = defaultdict(str)
 f = open("Newton_vs_Ros.RRBH.tab", "r")
@@ -6085,65 +6085,53 @@ GPALN_004897-T1
 GPALN_004901-T1
 GPALN_004902-T1""".split("\n")
 
-PF03917 = """GPALN_014885-T1
-GPALN_015654-T1
+PF03199 = """GPALN_015283-T1
 GPALN_015171-T1
 GPALN_016130-T1
-GPALN_015283-T1
 GPALN_015654-T2
-GPALN_006778-T1
-GPALN_007748-T1
-GPALN_006911-T1
+GPALN_015654-T1
+GPALN_014885-T1
 GPALN_006782-T1
-GPALN_005722-T1
+GPALN_006778-T1
+GPALN_006911-T1
+GPALN_007748-T1
 GPALN_005721-T1
 GPALN_008468-T1
-GPALN_010795-T1
-GPALN_010340-T1
 GPALN_010171-T1
-GPALN_013150-T1
-GPALN_012010-T1
+GPALN_010340-T1
+GPALN_010795-T1
+GPALN_010555-T1
 GPALN_012336-T1
-GPALN_011867-T1
+GPALN_012010-T1
+GPALN_013150-T1
 GPALN_002346-T1
-GPALN_002658-T1
-GPALN_002204-T1
-GPALN_002377-T1
 GPALN_002378-T1
-GPALN_002191-T1
+GPALN_002377-T1
 GPALN_002322-T1
+GPALN_002658-T1
 GPALN_002202-T1
+GPALN_002204-T1
+GPALN_002191-T1
 GPALN_002320-T1
-GPALN_004017-T1
-GPALN_004018-T1
-GPALN_003891-T1
-GPALN_003868-T1
-GPALN_003964-T1
-GPALN_003882-T1
-GPALN_004014-T1
-GPALN_005160-T1
-GPALN_004353-T1
-GPALN_004380-T1
-GPALN_004255-T1
-GPALN_005155-T1
-GPALN_003908-T1
-GPALN_003910-T1
-GPALN_004354-T1
-GPALN_004369-T1
-GPALN_004411-T1
-GPALN_003911-T1
 GPALN_003369-T1
-GPALN_003846-T1
+GPALN_004369-T1
+GPALN_004018-T1
+GPALN_004017-T1
+GPALN_004354-T1
+GPALN_004353-T1
+GPALN_004255-T1
+GPALN_004411-T1
 GPALN_004410-T1
+GPALN_003868-T1
+GPALN_003882-T1
+GPALN_003964-T1
 GPALN_003898-T1
-GPALN_003899-T1
-GPALN_004599-T1
-GPALN_004555-T1
-GPALN_004552-T1
-GPALN_004554-T1
-GPALN_004553-T1
-GPALN_005053-T1
-GPALN_003871-T1""".split("\n")
+GPALN_004380-T1
+GPALN_003846-T1
+GPALN_003871-T1
+GPALN_005160-T1
+GPALN_003911-T1
+GPALN_003908-T1""".split("\n")
 
 secreted_name = set([])
 
@@ -6166,65 +6154,70 @@ for i in signalP:
     if name.endswith("-T1"):
         secreted_name_sigP.add(name)
 
-PF03917_name = set([])
-for i in PF03917:
+PF03199_name = set([])
+for i in PF03199:
     name = i.rstrip()
     if name.endswith("-T1"):
-        PF03917_name.add(name)
+        PF03199_name.add(name)
 
-print("Newton: PF03917 domain containing proteins: ", len(PF03917_name))
+print("Newton: PF03199 domain containing proteins: ", len(PF03199_name))
 
-print("Newton: number of PF03917 proteins with sig peptide (Phobius) and no TMMD: ",
-      len(PF03917_name.intersection(secreted_name)))
+print("Newton: number of PF03199 proteins with sig peptide (Phobius) and no TMMD: ",
+      len(PF03199_name.intersection(secreted_name)))
 
-print("Newton: number of PF03917 proteins with sig peptide (signalp4.1): ",
-      len(PF03917_name.intersection(secreted_name_sigP)))
+print("Newton: number of PF03199 proteins with sig peptide (signalp4.1): ",
+      len(PF03199_name.intersection(secreted_name_sigP)))
 
 sig_and_phobius = secreted_name.union(secreted_name_sigP)
-newton_PF03917 = PF03917_name.difference(sig_and_phobius)
-print("Newton: number of PF03917 proteins with sig peptide (signalp4.1 and probius): ",
-      len(PF03917_name.intersection(sig_and_phobius)))
-PF03917_SEC = PF03917_name.intersection(sig_and_phobius)
+newton_PF03199 = PF03199_name.difference(sig_and_phobius)
+print("Newton: number of PF03199 proteins with sig peptide (signalp4.1 and probius): ",
+      len(PF03199_name.intersection(sig_and_phobius)))
+PF03199_SEC = PF03199_name.intersection(sig_and_phobius)
 print("Newton: secreted proteins phobius: ", len(secreted_name))
 print("Newton: secreted proteins signalp4.1: ", len(secreted_name_sigP))
-#print("number of newton PF03917 genes %d \n" % (len(newton_PF03917)))
+#print("number of newton PF03199 genes %d \n" % (len(newton_PF03199)))
 
-ROS_PF03917 = set("""GLOROS_006067
-GLOROS_006068
+ROS_PF03199 = set("""GLOROS_006019
+GLOROS_006017
 GLOROS_006017
 GLOROS_004959
-GLOROS_006019
-GLOROS_006018
+GLOROS_006067
+GLOROS_006068
+GLOROS_004959
+GLOROS_006020
+GLOROS_006020
+GLOROS_017879
 GLOROS_017550
 GLOROS_018939
 GLOROS_017879
 GLOROS_016675
+GLOROS_016452
+GLOROS_016451
 GLOROS_016432
 GLOROS_017115
-GLOROS_016451
 GLOROS_017080
-GLOROS_016452
+GLOROS_017021
 GLOROS_012641
 GLOROS_011903
-GLOROS_007814
-GLOROS_007815
 GLOROS_007861
-GLOROS_010211
+GLOROS_007814
+GLOROS_007814
+GLOROS_010292
+GLOROS_010289
 GLOROS_010202
-GLOROS_010168
-GLOROS_010172
-GLOROS_010123
-GLOROS_013891
-GLOROS_013548
-GLOROS_013489
-GLOROS_013784
-GLOROS_013486
-GLOROS_014094
+GLOROS_010211
+GLOROS_009960
+GLOROS_013588
 GLOROS_013491
-GLOROS_013588""".split())
+GLOROS_013489
+GLOROS_013484
+GLOROS_013548
+GLOROS_014094
+GLOROS_013486
+GLOROS_013486""".split())
 
 print( ".... GROS_Nanopore  nanpore info .....\n\n")
-print(" GROS_Nanopore  has %d PF03917 domain proteins" % len(ROS_PF03917))
+print(" GROS_Nanopore  has %d PF03199 domain proteins" % len(ROS_PF03199))
 
 GROS_all_secreted = set("""GLOROS_000030
 GLOROS_000031
@@ -10991,9 +10984,9 @@ GLOROS_018138
 GLOROS_018165""".split())
 
 
-ROS_PF03917_SECRETED = GROS_all_secreted.intersection(ROS_PF03917)
+ROS_PF03199_SECRETED = GROS_all_secreted.intersection(ROS_PF03199)
 
-print(" GROS_Nanopore  has %d PF03917_SECS " % len(ROS_PF03917_SECRETED))
+print(" GROS_Nanopore  has %d PF03199_SECS " % len(ROS_PF03199_SECRETED))
 
 
 
@@ -24797,49 +24790,49 @@ GPALN_016281
 GPALN_016387""".replace("\n", "-T1\n").split())
 
 
-J2PF03917_SECS = J2_RNAseq.intersection(PF03917_SEC)
+J2PF03199_SECS = J2_RNAseq.intersection(PF03199_SEC)
 
 
-#print("\nNewton analsysis: expressed PF03917_SECS (3 reads or more): ",
-#      len(J2PF03917_SECS))
-#print("\nPF03917_SECS Names, expressed in Newton J2 RNAseq: ",
-#      J2PF03917_SECS)
+#print("\nNewton analsysis: expressed PF03199_SECS (3 reads or more): ",
+#      len(J2PF03199_SECS))
+#print("\nPF03199_SECS Names, expressed in Newton J2 RNAseq: ",
+#      J2PF03199_SECS)
 #
-#print("\nPF03917_SECS NOT EXPRESSED in Newton J2 RNAseq: ",
-#      PF03917_SEC.difference(J2PF03917_SECS))
-#print("\nPF03917 domain containing proteins: ", len(PF03917_name))
+#print("\nPF03199_SECS NOT EXPRESSED in Newton J2 RNAseq: ",
+#      PF03199_SEC.difference(J2PF03199_SECS))
+#print("\nPF03199 domain containing proteins: ", len(PF03199_name))
 #
-#print("PF03917 domain containing proteins expressed in Newton J2 : ",
-#      len(PF03917_name.intersection(J2_RNAseq)))
+#print("PF03199 domain containing proteins expressed in Newton J2 : ",
+#      len(PF03199_name.intersection(J2_RNAseq)))
 #      
       
-print("\n.... now looking at GROS_Nanopore  PF03917s vs Newton PF03917s\n")
+print("\n.... now looking at GROS_Nanopore  PF03199s vs Newton PF03199s\n")
 
-PF03917_SEC_coutn = 0 
+PF03199_SEC_coutn = 0 
 no_sigP_domain_in_newton = 0
-for i in ROS_PF03917_SECRETED:
+for i in ROS_PF03199_SECRETED:
     RBBH_newt = GROS_Nanopore_to_newton[i]
     if RBBH_newt in sig_and_phobius:
-        print("GROS_Nanopore PF03917_SEC:\t%s\tRBBH PF03917_SECRETED in Newton \t%s" % (i, RBBH_newt))
-        PF03917_SEC_coutn = PF03917_SEC_coutn + 1
-    if RBBH_newt in newton_PF03917:
-        print("Weirdo;: GROS_Nanopore PF03917_SEC:\t%s\tRBBH PF03917_SECRETED in Newton PF03917 NOT secreted\t%s" % (i, RBBH_newt))
+        print("GROS_Nanopore PF03199_SEC:\t%s\tRBBH PF03199_SECRETED in Newton \t%s" % (i, RBBH_newt))
+        PF03199_SEC_coutn = PF03199_SEC_coutn + 1
+    if RBBH_newt in newton_PF03199:
+        print("Weirdo;: GROS_Nanopore PF03199_SEC:\t%s\tRBBH PF03199_SECRETED in Newton PF03199 NOT secreted\t%s" % (i, RBBH_newt))
         no_sigP_domain_in_newton = no_sigP_domain_in_newton + 1
  
 
-print("\nwe have %d PF03917_SECRETEDs with signal peptides in both GROS_Nanopore and newton\n" % (PF03917_SEC_coutn))
-print("\nwe have %d PF03917_SECRETEDs with signal peptides in GROS_Nanopore BUT ONLY PF03917 doamin in newton\n" % (no_sigP_domain_in_newton))
+print("\nwe have %d PF03199_SECRETEDs with signal peptides in both GROS_Nanopore and newton\n" % (PF03199_SEC_coutn))
+print("\nwe have %d PF03199_SECRETEDs with signal peptides in GROS_Nanopore BUT ONLY PF03199 doamin in newton\n" % (no_sigP_domain_in_newton))
 
 
-PF03917_coutn = 0 
-for i in ROS_PF03917:
-    if i in ROS_PF03917_SECRETED:
+PF03199_coutn = 0 
+for i in ROS_PF03199:
+    if i in ROS_PF03199_SECRETED:
         continue
     RBBH_newt = GROS_Nanopore_to_newton[i]
     if RBBH_newt in sig_and_phobius:
-        print("GROS_Nanopore PF03917 (not SEC!!):\t%s\tRBBH PF03917_SECRETED in Newton \t%s" % (i, RBBH_newt))
-        PF03917_coutn = PF03917_coutn + 1
+        print("GROS_Nanopore PF03199 (not SEC!!):\t%s\tRBBH PF03199_SECRETED in Newton \t%s" % (i, RBBH_newt))
+        PF03199_coutn = PF03199_coutn + 1
 
-print("\nwe have %d GROS_Nanopore  PF03917 withOUT signal peptide but PF03917_SEC in newton\n" % (PF03917_coutn))
+print("\nwe have %d GROS_Nanopore  PF03199 withOUT signal peptide but PF03199_SEC in newton\n" % (PF03199_coutn))
 
     
