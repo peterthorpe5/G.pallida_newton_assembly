@@ -76,6 +76,7 @@ def take(n, iterable):
     "Return first n items of the iterable as a list"
     return list(islice(iterable, n))
 
+
 def open_file_retunrPI(infile):
     """def to open the pi ouput from vcf tools
     return a list of the vals and other dictionaries. """
