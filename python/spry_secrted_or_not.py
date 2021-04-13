@@ -6626,8 +6626,16 @@ sprysec = spry_name.intersection(sig_and_phobius)
 print("secreted proteins phobius: ", len(secreted_name))
 print("secreted proteins signalp4.1: ", len(secreted_name_sigP))
 
+
+name__str = ""
 for i in spry_name.intersection(sig_and_phobius):
     print(i)
+    name__str = name__str + ", " + i
+
+print(name__str)
+
+
+    
 
 
 
