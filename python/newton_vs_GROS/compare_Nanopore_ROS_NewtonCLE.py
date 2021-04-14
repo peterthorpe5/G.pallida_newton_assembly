@@ -11104,3 +11104,10 @@ print("\nwe have %d Lind CLE withOUT signal peptide but CLE_SEC in newton\n" % (
 
 
 print("GROS has %d secreted proteins \n " % len(GROS_all_secreted))
+
+
+wanted =  CLE_name.intersection(secreted_name_sigP)
+
+for i in wanted:
+    print(i.split("-T")[0])
+    

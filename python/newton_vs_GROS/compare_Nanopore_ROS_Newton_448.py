@@ -11093,3 +11093,9 @@ print("\nwe have %d Lind four_48 withOUT signal peptide but four_48SEC in newton
 
 
 print("GROS has %d secreted proteins \n " % len(GROS_all_secreted))
+
+
+wanted = four_48_name.intersection(secreted_name)
+
+for i in wanted:
+    print(i)

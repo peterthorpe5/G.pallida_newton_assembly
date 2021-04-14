@@ -10979,4 +10979,11 @@ for i in GROS_1106:
 
 print("\nwe have %d GROS eleven_06 withOUT signal peptide but eleven_06SEC in newton\n" % (eleven_06_coutn))
 
+wanted = eleven_06_name.intersection(secreted_name)
+
+
+for i in wanted:
+    print(i.split("-T")[0])
+    
+    
     

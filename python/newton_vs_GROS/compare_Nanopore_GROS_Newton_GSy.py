@@ -24835,4 +24835,7 @@ for i in ROS_PF03199:
 
 print("\nwe have %d GROS_Nanopore  PF03199 withOUT signal peptide but PF03199_SEC in newton\n" % (PF03199_coutn))
 
-    
+wanted =  PF03199_name.intersection(secreted_name)
+
+for i in wanted:
+    print(i)
