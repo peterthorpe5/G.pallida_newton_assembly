@@ -44,6 +44,8 @@ wait
 
 filenames=*.fasta
 #
+export PATH=/storage/home/users/pjt6/shelf_apps/apps/augustus-3.2.1/bin/:/storage/home/users/pjt6/shelf_apps/apps/augustus-3.2.1/src/:/storage/home/users/pjt6/shelf_apps/apps/augustus-3.2.1/src/scripts/:$PATH
+
 for f in ${filenames}
 do
     python ~/shelf_apps/apps/BUSCO_v1.1b1/BUSCO_v1.1b1.py -in ${f} -l ./LINEAGE/eukaryota -o ${f}_BUSCO  -f -Z 827000000 --cpu 8 --species Globodera_pallida_illumina_published_assembly_20180530
