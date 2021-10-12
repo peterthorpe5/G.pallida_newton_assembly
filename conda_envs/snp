@@ -1,0 +1,9 @@
+name: snppipeline2
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - snp-pipeline
+prefix: /shelf/apps/pjt6/conda/envs/snppipeline2

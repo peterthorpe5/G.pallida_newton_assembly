@@ -1,0 +1,12 @@
+name: homer
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - homer=4.9.1=pl526h2d50403_6
+  - libgcc-ng=8.2.0=hdf63c60_1
+  - libstdcxx-ng=8.2.0=hdf63c60_1
+  - perl=5.26.2=h14c3975_1002
+prefix: /shelf/apps/pjt6/conda/envs/homer

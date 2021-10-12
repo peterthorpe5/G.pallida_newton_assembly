@@ -1,0 +1,9 @@
+name: spaces_2021
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - spades
+prefix: /shelf/apps/pjt6/conda/envs/spaces_2021

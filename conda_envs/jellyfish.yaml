@@ -1,0 +1,13 @@
+name: jellyfish
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - jellyfish=2.2.10=h2d50403_0
+  - jemalloc=4.5.0=0
+  - libgcc=7.2.0=h69d50b8_2
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+prefix: /shelf/apps/pjt6/conda/envs/jellyfish

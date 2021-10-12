@@ -1,0 +1,9 @@
+name: snpsites
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - snp-sites
+prefix: /shelf/apps/pjt6/conda/envs/snpsites

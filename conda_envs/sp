@@ -1,0 +1,37 @@
+name: spaces_2021
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - _sysroot_linux-64_curr_repodata_hack=3=ha9d2b57_10
+  - bzip2=1.0.8=h7f98852_4
+  - ca-certificates=2020.12.5=ha878542_0
+  - certifi=2020.12.5=py39hf3d152e_1
+  - kernel-headers_linux-64=3.10.0=h77966d4_10
+  - ld_impl_linux-64=2.35.1=hea4e1c9_2
+  - libffi=3.3=h58526e2_2
+  - libgcc-ng=9.3.0=h2828fa1_18
+  - libgomp=9.3.0=h2828fa1_18
+  - libstdcxx-ng=9.3.0=h6de172a_18
+  - llvm-openmp=8.0.1=hc9558a2_0
+  - ncurses=6.2=h58526e2_4
+  - openmp=8.0.1=0
+  - openssl=1.1.1j=h7f98852_0
+  - pip=21.0.1=pyhd8ed1ab_0
+  - python=3.9.2=hffdb5ce_0_cpython
+  - python_abi=3.9=1_cp39
+  - readline=8.0=he28a2e2_2
+  - setuptools=49.6.0=py39hf3d152e_3
+  - spades=3.15.0=h633aebb_0
+  - sqlite=3.34.0=h74cdb3f_0
+  - sysroot_linux-64=2.17=h77966d4_10
+  - tk=8.6.10=h21135ba_1
+  - tzdata=2021a=he74cb21_0
+  - wheel=0.36.2=pyhd3deb0d_0
+  - xz=5.2.5=h516909a_1
+  - zlib=1.2.11=h516909a_1010
+prefix: /shelf/apps/pjt6/conda/envs/spaces_2021

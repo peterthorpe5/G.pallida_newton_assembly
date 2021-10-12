@@ -1,0 +1,11 @@
+name: hmm
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - hmmer=3.2.1=hf484d3e_1
+  - libgcc-ng=7.3.0=hdf63c60_0
+  - libstdcxx-ng=7.3.0=hdf63c60_0
+prefix: /shelf/apps/pjt6/conda/envs/hmm

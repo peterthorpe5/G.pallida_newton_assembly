@@ -1,0 +1,7 @@
+name: seq2hla
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+prefix: /shelf/apps/pjt6/conda/envs/seq2hla

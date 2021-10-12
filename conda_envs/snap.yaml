@@ -1,0 +1,9 @@
+name: snap
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - snap-aligner=1.0beta.23=0
+prefix: /shelf/apps/pjt6/conda/envs/snap

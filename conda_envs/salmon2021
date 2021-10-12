@@ -1,0 +1,9 @@
+name: salmon2021
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - salmon
+prefix: /shelf/apps/pjt6/conda/envs/salmon2021

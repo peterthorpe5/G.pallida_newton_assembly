@@ -1,0 +1,15 @@
+name: zstd
+channels:
+  - anaconda
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - libstdcxx-ng=9.1.0=hdf63c60_0
+  - lz4-c=1.9.2=heb0550a_3
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+  - zstd=1.4.5=h9ceee32_0
+prefix: /shelf/apps/pjt6/conda/envs/zstd

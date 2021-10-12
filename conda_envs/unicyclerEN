@@ -1,0 +1,9 @@
+name: unicyclerENV
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - unicycler
+prefix: /shelf/apps/pjt6/conda/envs/unicyclerENV

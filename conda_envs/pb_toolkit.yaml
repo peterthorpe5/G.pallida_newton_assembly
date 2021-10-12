@@ -1,0 +1,14 @@
+name: pb_toolkit
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - pb-assembly
+  - pbcore
+  - pilon
+  - bwa
+  - genomicconsensus
+  - numpy
+prefix: /shelf/apps/pjt6/conda/envs/pb_toolkit

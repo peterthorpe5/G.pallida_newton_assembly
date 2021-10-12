@@ -1,0 +1,13 @@
+name: minialign
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - libgcc=7.2.0=h69d50b8_2
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+  - minialign=0.5.3=1
+  - zlib=1.2.11=h470a237_3
+prefix: /shelf/apps/pjt6/conda/envs/minialign

@@ -1,0 +1,26 @@
+name: emboss
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - emboss=6.6.0=h6debe1e_0
+  - expat=2.2.5=hfc679d8_2
+  - fontconfig=2.13.1=h65d0f4c_0
+  - freetype=2.9.1=h6debe1e_4
+  - giflib=5.1.4=h470a237_1
+  - icu=58.2=hfc679d8_0
+  - jpeg=9c=h470a237_1
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libgd=2.2.5=hed1f559_4
+  - libiconv=1.15=h470a237_3
+  - libpng=1.6.36=ha92aebf_0
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+  - libtiff=4.0.10=he6b73bb_1
+  - libuuid=2.32.1=h470a237_2
+  - libwebp=1.0.1=h08eee79_0
+  - libxml2=2.9.8=h422b904_5
+  - xz=5.2.4=h470a237_1
+  - zlib=1.2.11=h470a237_3
+prefix: /shelf/apps/pjt6/conda/envs/emboss

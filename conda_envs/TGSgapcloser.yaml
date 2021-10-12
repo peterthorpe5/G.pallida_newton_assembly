@@ -1,0 +1,34 @@
+name: TGSgapcloser
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - ca-certificates=2020.11.8=ha878542_0
+  - certifi=2020.11.8=py39hf3d152e_0
+  - k8=0.2.5=he513fc3_0
+  - ld_impl_linux-64=2.35.1=hed1e6ac_0
+  - libffi=3.3=h58526e2_1
+  - libgcc-ng=9.3.0=h5dbcf3e_17
+  - libgomp=9.3.0=h5dbcf3e_17
+  - libstdcxx-ng=9.3.0=h2ae2ef3_17
+  - minimap2=2.17=hed695b0_3
+  - ncurses=6.2=h58526e2_4
+  - openssl=1.1.1h=h516909a_0
+  - pip=20.3=pyhd8ed1ab_0
+  - python=3.9.0=hffdb5ce_5_cpython
+  - python_abi=3.9=1_cp39
+  - racon=1.4.13=he513fc3_0
+  - readline=8.0=he28a2e2_2
+  - setuptools=49.6.0=py39h079e4ff_2
+  - sqlite=3.34.0=h74cdb3f_0
+  - tgsgapcloser=1.0.3=h8b12597_0
+  - tk=8.6.10=hed695b0_1
+  - tzdata=2020d=h516909a_0
+  - wheel=0.36.0=pyhd3deb0d_0
+  - xz=5.2.5=h516909a_1
+  - zlib=1.2.11=h516909a_1010
+prefix: /shelf/apps/pjt6/conda/envs/TGSgapcloser

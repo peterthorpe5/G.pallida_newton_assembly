@@ -1,0 +1,24 @@
+name: glibc
+channels:
+  - groakat
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - binutils_impl_linux-64=2.35.1=h193b22a_2
+  - binutils_linux-64=2.35=h67ddf6f_30
+  - gcc_impl_linux-64=9.3.0=h70c0ae5_19
+  - gcc_linux-64=9.3.0=hf25ea35_30
+  - kernel-headers_linux-64=2.6.32=h77966d4_13
+  - ld_impl_linux-64=2.35.1=hea4e1c9_2
+  - libc=2.21=2
+  - libgcc-devel_linux-64=9.3.0=h7864c58_19
+  - libgcc-ng=9.3.0=h2828fa1_19
+  - libgomp=9.3.0=h2828fa1_19
+  - libstdcxx-ng=9.3.0=h6de172a_19
+  - libtool=2.4.6=h58526e2_1007
+  - sysroot_linux-64=2.12=h77966d4_13
+prefix: /shelf/apps/pjt6/conda/envs/glibc

@@ -1,0 +1,21 @@
+name: trinity
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - trinity
+  - r
+  - bioconductor-deseq2
+  - bioconductor-biobase
+  - r-ape
+  - transdecoder
+  - trinotate
+  - r-ggplot2
+  - bioconductor-ctc
+  - bioconductor-limma
+  - bioconductor-edger
+  - bioconductor-dexseq
+  - r-gplots
+prefix: /shelf/apps/pjt6/conda/envs/trinity

@@ -1,0 +1,15 @@
+name: nucmer
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - libgcc-ng=9.3.0=h2828fa1_19
+  - libgomp=9.3.0=h2828fa1_19
+  - libstdcxx-ng=9.3.0=h6de172a_19
+  - mummer=3.23=pl5262h1b792b2_12
+  - perl=5.26.2=h36c2ea0_1008
+prefix: /shelf/apps/pjt6/conda/envs/nucmer

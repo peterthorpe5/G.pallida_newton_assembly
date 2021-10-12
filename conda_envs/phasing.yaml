@@ -1,0 +1,43 @@
+name: phasing
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - bcftools=1.9=h4da6232_0
+  - bz2file=0.98=py_0
+  - bzip2=1.0.6=h470a237_2
+  - ca-certificates=2018.10.15=ha4d7672_0
+  - certifi=2018.10.15=py36_1000
+  - curl=7.62.0=h74213dd_0
+  - decorator=4.3.0=py_0
+  - htslib=1.9=hc238db4_4
+  - krb5=1.16.2=hbb41f41_0
+  - libcurl=7.62.0=hbdb9355_0
+  - libdeflate=1.0=h470a237_0
+  - libedit=3.1.20170329=haf1bffa_1
+  - libffi=3.2.1=hfc679d8_5
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libssh2=1.8.0=h5b517e9_2
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+  - ncurses=6.1=hfc679d8_1
+  - networkx=2.2=py_1
+  - openssl=1.0.2p=h470a237_1
+  - pip=18.1=py36_1000
+  - pyfaidx=0.5.5.2=py_0
+  - pysam=0.15.1=py36h0380709_0
+  - python=3.6.6=h5001a0f_3
+  - pyvcf=0.6.8=py36_0
+  - readline=7.0=haf1bffa_1
+  - samtools=1.9=h8ee4bcc_1
+  - setuptools=40.6.2=py36_0
+  - six=1.11.0=py36_1001
+  - sqlite=3.25.3=hb1c47c0_0
+  - tk=8.6.8=ha92aebf_0
+  - whatshap=0.17=py36h470a237_0
+  - wheel=0.32.2=py36_0
+  - xopen=0.3.5=py_0
+  - xz=5.2.4=h470a237_1
+  - zlib=1.2.11=h470a237_3
+prefix: /shelf/apps/pjt6/conda/envs/phasing

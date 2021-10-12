@@ -1,0 +1,18 @@
+name: salmon
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - bzip2=1.0.8=h7f98852_4
+  - icu=64.2=he1b5a44_1
+  - libgcc-ng=9.3.0=h2828fa1_18
+  - libgomp=9.3.0=h2828fa1_18
+  - libstdcxx-ng=9.3.0=h6de172a_18
+  - salmon=1.1.0=hf69c8f4_0
+  - tbb=2020.2=h4bd325d_3
+  - zlib=1.2.11=h516909a_1010
+prefix: /shelf/apps/pjt6/conda/envs/salmon

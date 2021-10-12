@@ -1,0 +1,25 @@
+name: sspace
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - libgcc-ng=9.3.0=h5dbcf3e_17
+  - libgomp=9.3.0=h5dbcf3e_17
+  - perl=5.26.2=h36c2ea0_1008
+  - perl-carp=1.38=pl526_3
+  - perl-constant=1.33=pl526_1
+  - perl-exporter=5.72=pl526_1
+  - perl-extutils-makemaker=7.36=pl526_1
+  - perl-getopt-long=2.50=pl526_1
+  - perl-parent=0.236=pl526_1
+  - perl-perl4-corelibs=0.004=pl526_1
+  - perl-scalar-list-utils=1.52=pl526h516909a_0
+  - perl-socket=2.027=pl526_1
+  - perl-text-parsewords=3.30=pl526_0
+  - perl-time-local=1.28=pl526_1
+  - perl-yaml=1.29=pl526_0
+prefix: /shelf/apps/pjt6/conda/envs/sspace

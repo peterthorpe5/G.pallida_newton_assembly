@@ -1,0 +1,16 @@
+name: bbnorm
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=1_gnu
+  - bbmap=38.90=h1296035_0
+  - bzip2=1.0.8=h7f98852_4
+  - libgcc-ng=9.3.0=h2828fa1_18
+  - libgomp=9.3.0=h2828fa1_18
+  - openjdk=10.0.2=h14c3975_1015
+  - pbzip2=1.1.13=0
+prefix: /shelf/apps/pjt6/conda/envs/bbnorm

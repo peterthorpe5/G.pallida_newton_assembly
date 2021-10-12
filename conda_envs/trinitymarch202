@@ -1,0 +1,9 @@
+name: trinitymarch2020
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - trinity
+prefix: /shelf/apps/pjt6/conda/envs/trinitymarch2020

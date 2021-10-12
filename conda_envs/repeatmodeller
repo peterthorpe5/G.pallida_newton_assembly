@@ -1,0 +1,9 @@
+name: repeatmodeller
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - R
+dependencies:
+  - repeatmodeler
+prefix: /shelf/apps/pjt6/conda/envs/repeatmodeller
